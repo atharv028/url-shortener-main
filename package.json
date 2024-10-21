@@ -1,0 +1,37 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "roadmap.sh challenge",
+  "author": "Atharv Tare",
+  "keywords": [
+    "url",
+    "url-shortener"
+  ],
+  "license": "MIT",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.5.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^22.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "_moduleAliases": {
+    "@app": "dist/bootstrap/app.js",
+    "@config": "dist/config",
+    "@routes": "dist/routes",
+    "@models": "dist/models",
+    "@repository": "dist/repository",
+    "@services": "dist/services"
+  }
+}
